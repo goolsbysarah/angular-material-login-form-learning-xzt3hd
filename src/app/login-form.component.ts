@@ -29,6 +29,16 @@ import { FormGroup, FormControl } from '@angular/forms';
         </form>
       </mat-card-content>
     </mat-card>
+
+    <mat-toolbar>
+      
+<button class="home">
+  <mat-icon>home</mat-icon>
+</button>
+<span class="example-spacer"></span>
+
+
+</mat-toolbar>
   `,
   styles: [
     `
@@ -61,6 +71,35 @@ import { FormGroup, FormControl } from '@angular/forms';
         justify-context: flex-end;
         float: right;
       }
+      .mat-toolbar{
+        position: fixed;
+        bottom: 0; 
+        left: 0%;
+        color: white;
+        background-color: #E3E7F1;
+      
+      }
+      
+      .create {
+        color: #52688F;
+        border: none;
+        background-color: #E3E7F1;
+        float: right;
+        
+        
+      }
+      .home {
+        color: #52688F;
+        border: none;
+        background-color: #E3E7F1;
+        
+      }
+      
+      .example-spacer {
+      
+        flex: 1 1 auto;
+      }
+
     `,
   ],
 })

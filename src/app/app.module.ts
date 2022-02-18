@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { LoginFormComponent } from './login-form.component';
 
 import { MaterialModule } from './material.module';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
-  imports:      [ BrowserModule, ReactiveFormsModule, MaterialModule, BrowserAnimationsModule],
+  imports:      [ BrowserModule, ReactiveFormsModule, MaterialModule, BrowserAnimationsModule, MatIconModule, MatToolbarModule],
   declarations: [ AppComponent, LoginFormComponent ],
   bootstrap:    [ AppComponent ]
 })
