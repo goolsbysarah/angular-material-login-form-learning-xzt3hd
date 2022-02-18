@@ -5,7 +5,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   selector: 'my-login-form',
   template: `
       <mat-card>
-            <mat-card-title>Register</mat-card-title>
+            <mat-card-title>Log In</mat-card-title>
       <mat-card-content>
         <form [formGroup]="form" (ngSubmit)="submit()">
           <p>
@@ -20,14 +20,10 @@ import { FormGroup, FormControl } from '@angular/forms';
             </mat-form-field>
           </p>
 
-          <p>
-          <mat-form-field>
-            <input type="password" matInput placeholder="Confirm Passord" formControlName="password">
-          </mat-form-field>
-        </p>
+          
 
-        <button mat-raised-button>Log In</button>
-        <button class="register" mat-raised-button>Register</button>
+    
+        <button class="register" mat-raised-button>Log In</button>
 
 
         </form>
